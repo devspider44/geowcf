@@ -1,0 +1,4 @@
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Tests.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Tests.pdb
+C:\dev\git\GeoWcf\GeoWcf.Tests\obj\Debug\GeoWcf.Tests.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\obj\Debug\GeoWcf.Tests.pdb

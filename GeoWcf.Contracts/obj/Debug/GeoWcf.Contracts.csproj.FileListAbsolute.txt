@@ -1,0 +1,5 @@
+C:\dev\git\GeoWcf\GeoWcf.Contracts\bin\Debug\GeoWcf.Contracts.dll
+C:\dev\git\GeoWcf\GeoWcf.Contracts\bin\Debug\GeoWcf.Contracts.pdb
+C:\dev\git\GeoWcf\GeoWcf.Contracts\obj\Debug\GeoWcf.Contracts.csprojResolveAssemblyReference.cache
+C:\dev\git\GeoWcf\GeoWcf.Contracts\obj\Debug\GeoWcf.Contracts.dll
+C:\dev\git\GeoWcf\GeoWcf.Contracts\obj\Debug\GeoWcf.Contracts.pdb

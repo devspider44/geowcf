@@ -1,0 +1,1 @@
+C:\dev\git\GeoWcf\GeoWcf.Data\obj\Debug\GeoWcf.Data.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Services.dll
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Services.pdb
+C:\dev\git\GeoWcf\GeoWcf.Services\obj\Debug\GeoWcf.Services.csprojResolveAssemblyReference.cache
+C:\dev\git\GeoWcf\GeoWcf.Services\obj\Debug\GeoWcf.Services.dll
+C:\dev\git\GeoWcf\GeoWcf.Services\obj\Debug\GeoWcf.Services.pdb
