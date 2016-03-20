@@ -1,2 +1,15 @@
 *.mdf
+
 *.ldf
+GeoWcf.Contracts/obj/
+GeoWcf.Contracts/bin/
+GeoWcf.Core/obj/
+GeoWcf.Core/bin/
+GeoWcf.ConsoleHost/obj/
+GeoWcf.ConsoleHost/bin/
+GeoWcf.Services/obj/
+GeoWcf.Services/bin/
+GeoWcf.Data/obj/
+GeoWcf.Data/bin/
+GeoWcf.Tests/obj/
+GeoWcf.Tests/bin/
