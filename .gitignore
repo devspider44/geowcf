@@ -7,6 +7,8 @@ GeoWcf.Core/obj/
 GeoWcf.Core/bin/
 GeoWcf.ConsoleHost/obj/
 GeoWcf.ConsoleHost/bin/
+GeoWcf.WebHost/obj/
+GeoWcf.WebHost/bin/
 GeoWcf.Services/obj/
 GeoWcf.Services/bin/
 GeoWcf.Data/obj/
