@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>ccccb59e-2e51-40f0-b4fa-1597a54c7161</ProjectGuid>
+    <ProjectGuid>{5C9FB331-95F8-4960-A06F-FCAAA65BD965}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GeoWcf.ConsoleHost</RootNamespace>
@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoWcf.Contracts\GeoWcf.Contracts.csproj">
+      <Project>{56ae0951-0a03-4583-bee0-f9b0378a95b6}</Project>
+      <Name>GeoWcf.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoWcf.Services\GeoWcf.Services.csproj">
+      <Project>{ae465c3d-d559-4714-b2a9-1d734dd793b7}</Project>
+      <Name>GeoWcf.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
