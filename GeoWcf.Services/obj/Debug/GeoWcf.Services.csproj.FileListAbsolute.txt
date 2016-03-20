@@ -3,3 +3,14 @@ C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Services.pdb
 C:\dev\git\GeoWcf\GeoWcf.Services\obj\Debug\GeoWcf.Services.csprojResolveAssemblyReference.cache
 C:\dev\git\GeoWcf\GeoWcf.Services\obj\Debug\GeoWcf.Services.dll
 C:\dev\git\GeoWcf\GeoWcf.Services\obj\Debug\GeoWcf.Services.pdb
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Services.dll.config
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\EntityFramework.dll
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Contracts.dll
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Core.dll
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Data.dll
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Contracts.pdb
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Core.pdb
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\GeoWcf.Data.pdb
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\EntityFramework.xml
+C:\dev\git\GeoWcf\GeoWcf.Services\bin\Debug\EntityFramework.SqlServer.xml

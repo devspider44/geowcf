@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,7 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoWcf.Contracts\GeoWcf.Contracts.csproj">
+      <Project>{56ae0951-0a03-4583-bee0-f9b0378a95b6}</Project>
+      <Name>GeoWcf.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoWcf.Core\GeoWcf.Core.csproj">
+      <Project>{d17899b6-9b40-4a2b-8629-99a89556ec3a}</Project>
+      <Name>GeoWcf.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoWcf.Data\GeoWcf.Data.csproj">
+      <Project>{816f74a5-c59e-491d-8aa1-3ca1d0d64d76}</Project>
+      <Name>GeoWcf.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoWcf.Services\GeoWcf.Services.csproj">
+      <Project>{ae465c3d-d559-4714-b2a9-1d734dd793b7}</Project>
+      <Name>GeoWcf.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

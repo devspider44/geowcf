@@ -2,3 +2,16 @@ C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Tests.dll
 C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Tests.pdb
 C:\dev\git\GeoWcf\GeoWcf.Tests\obj\Debug\GeoWcf.Tests.dll
 C:\dev\git\GeoWcf\GeoWcf.Tests\obj\Debug\GeoWcf.Tests.pdb
+C:\dev\git\GeoWcf\GeoWcf.Tests\obj\Debug\GeoWcf.Tests.csprojResolveAssemblyReference.cache
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Contracts.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Core.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Data.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Services.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\Moq.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\EntityFramework.dll
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Contracts.pdb
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Core.pdb
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Data.pdb
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\GeoWcf.Services.pdb
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\Moq.xml
+C:\dev\git\GeoWcf\GeoWcf.Tests\bin\Debug\EntityFramework.xml
