@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{7D51
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoWcf.ConsoleHost", "GeoWcf.ConsoleHost\GeoWcf.ConsoleHost.csproj", "{5C9FB331-95F8-4960-A06F-FCAAA65BD965}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoWcf.WebHost", "GeoWcf.WebHost\GeoWcf.WebHost.csproj", "{E82A0839-2D08-48EA-8727-D2000D44347F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,11 +49,16 @@ Global
 		{5C9FB331-95F8-4960-A06F-FCAAA65BD965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9FB331-95F8-4960-A06F-FCAAA65BD965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C9FB331-95F8-4960-A06F-FCAAA65BD965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82A0839-2D08-48EA-8727-D2000D44347F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82A0839-2D08-48EA-8727-D2000D44347F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82A0839-2D08-48EA-8727-D2000D44347F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82A0839-2D08-48EA-8727-D2000D44347F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5C9FB331-95F8-4960-A06F-FCAAA65BD965} = {7D5164E0-D153-4DEA-8D1A-619CA3E2FD0E}
+		{E82A0839-2D08-48EA-8727-D2000D44347F} = {7D5164E0-D153-4DEA-8D1A-619CA3E2FD0E}
 	EndGlobalSection
 EndGlobal
