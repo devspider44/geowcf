@@ -22,6 +22,10 @@ namespace GeoWcf.ConsoleHost
 
             hostGeoManager.AddServiceEndpoint(contract, binding, address);
 
+            //string address2 = "http://localhost/GeoService";
+            //Binding binding2 = new BasicHttpBinding();
+
+            //hostGeoManager.AddServiceEndpoint(contract, binding2, address2);
 
             hostGeoManager.Open();
 

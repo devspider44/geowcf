@@ -1,0 +1,17 @@
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\bin\Debug\GeoWcf.Client.Wpf.exe.config
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\bin\Debug\GeoWcf.Client.Wpf.exe
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\bin\Debug\GeoWcf.Client.Wpf.pdb
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\bin\Debug\GeoWcf.Contracts.dll
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\bin\Debug\GeoWcf.Proxies.dll
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\bin\Debug\GeoWcf.Contracts.pdb
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\bin\Debug\GeoWcf.Proxies.pdb
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\GeoWcf.Client.Wpf.csprojResolveAssemblyReference.cache
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\MainWindow.baml
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\MainWindow.g.cs
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\App.g.cs
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\GeoWcf.Client.Wpf_MarkupCompile.cache
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\GeoWcf.Client.Wpf.g.resources
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\GeoWcf.Client.Wpf.Properties.Resources.resources
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\GeoWcf.Client.Wpf.csproj.GenerateResource.Cache
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\GeoWcf.Client.Wpf.exe
+C:\dev\git\GeoWcf\GeoWcf.Client.Wpf\obj\Debug\GeoWcf.Client.Wpf.pdb
