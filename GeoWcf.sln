@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoWcf.Proxies", "GeoWcf.Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoWcf.Client.Wpf", "GeoWcf.Client.Wpf\GeoWcf.Client.Wpf.csproj", "{7C1F1A0D-4119-4CF7-9F83-03DF2732CEFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoWcf.WindowsHost", "GeoWcf.WindowsHost\GeoWcf.WindowsHost.csproj", "{7858B4D5-7640-4ACF-9009-75F2F4C406CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{7C1F1A0D-4119-4CF7-9F83-03DF2732CEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C1F1A0D-4119-4CF7-9F83-03DF2732CEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C1F1A0D-4119-4CF7-9F83-03DF2732CEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7858B4D5-7640-4ACF-9009-75F2F4C406CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7858B4D5-7640-4ACF-9009-75F2F4C406CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7858B4D5-7640-4ACF-9009-75F2F4C406CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7858B4D5-7640-4ACF-9009-75F2F4C406CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +78,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5C9FB331-95F8-4960-A06F-FCAAA65BD965} = {7D5164E0-D153-4DEA-8D1A-619CA3E2FD0E}
 		{E82A0839-2D08-48EA-8727-D2000D44347F} = {7D5164E0-D153-4DEA-8D1A-619CA3E2FD0E}
+		{7858B4D5-7640-4ACF-9009-75F2F4C406CC} = {7D5164E0-D153-4DEA-8D1A-619CA3E2FD0E}
 	EndGlobalSection
 EndGlobal
