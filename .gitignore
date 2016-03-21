@@ -15,3 +15,7 @@ GeoWcf.Data/obj/
 GeoWcf.Data/bin/
 GeoWcf.Tests/obj/
 GeoWcf.Tests/bin/
+GeoWcf.Proxies/obj/
+GeoWcf.Proxies/bin/
+GeoWcf.Client/obj/
+GeoWcf.Client/bin/
