@@ -5,6 +5,5 @@ C:\dev\git\GeoWcf\GeoWcf.Core\bin\Debug\EntityFramework.dll
 C:\dev\git\GeoWcf\GeoWcf.Core\bin\Debug\EntityFramework.SqlServer.dll
 C:\dev\git\GeoWcf\GeoWcf.Core\bin\Debug\EntityFramework.xml
 C:\dev\git\GeoWcf\GeoWcf.Core\bin\Debug\EntityFramework.SqlServer.xml
-C:\dev\git\GeoWcf\GeoWcf.Core\obj\Debug\GeoWcf.Core.csprojResolveAssemblyReference.cache
 C:\dev\git\GeoWcf\GeoWcf.Core\obj\Debug\GeoWcf.Core.dll
 C:\dev\git\GeoWcf\GeoWcf.Core\obj\Debug\GeoWcf.Core.pdb

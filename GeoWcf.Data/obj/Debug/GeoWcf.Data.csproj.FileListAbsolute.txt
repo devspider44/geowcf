@@ -1,4 +1,3 @@
-C:\dev\git\GeoWcf\GeoWcf.Data\obj\Debug\GeoWcf.Data.csprojResolveAssemblyReference.cache
 C:\dev\git\GeoWcf\GeoWcf.Data\bin\Debug\GeoWcf.Data.dll.config
 C:\dev\git\GeoWcf\GeoWcf.Data\bin\Debug\GeoWcf.Data.dll
 C:\dev\git\GeoWcf\GeoWcf.Data\bin\Debug\GeoWcf.Data.pdb
@@ -8,5 +7,6 @@ C:\dev\git\GeoWcf\GeoWcf.Data\bin\Debug\GeoWcf.Core.dll
 C:\dev\git\GeoWcf\GeoWcf.Data\bin\Debug\GeoWcf.Core.pdb
 C:\dev\git\GeoWcf\GeoWcf.Data\bin\Debug\EntityFramework.xml
 C:\dev\git\GeoWcf\GeoWcf.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\git\GeoWcf\GeoWcf.Data\obj\Debug\GeoWcf.Data.csprojResolveAssemblyReference.cache
 C:\dev\git\GeoWcf\GeoWcf.Data\obj\Debug\GeoWcf.Data.dll
 C:\dev\git\GeoWcf\GeoWcf.Data\obj\Debug\GeoWcf.Data.pdb
