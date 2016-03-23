@@ -19,3 +19,7 @@ GeoWcf.Proxies/obj/
 GeoWcf.Proxies/bin/
 GeoWcf.Client/obj/
 GeoWcf.Client/bin/
+GeoWcf.WindowsHost/obj/
+GeoWcf.WindowsHost/bin/
+GeoWcf.Client.Wpf/obj/
+GeoWcf.Client.Wpf/bin/
