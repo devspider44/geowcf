@@ -37,9 +37,12 @@ namespace GeoWcf.WindowsHost
         }
 
         private ServiceHost _HostGeoManager = null;
+        private ServiceHost _HostMessageManager = null;
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             _HostGeoManager = new ServiceHost(typeof(GeoManager));
+            _HostMessageManager = new ServiceHost(typeof (MessageManager));
+            _HostMessageManager.Open();
             _HostGeoManager.Open();
             btnStart.IsEnabled = false;
             btnStop.IsEnabled = true;
@@ -48,6 +51,7 @@ namespace GeoWcf.WindowsHost
         private void btnStop_Click(object sender, RoutedEventArgs e)
         {
             _HostGeoManager.Close();
+            _HostMessageManager.Close();
             btnStart.IsEnabled = true;
             btnStop.IsEnabled = false;
         }

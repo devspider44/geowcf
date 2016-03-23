@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GeoWcf.Client.Contracts;
 using GeoWcf.Contracts;
 using GeoWcf.Proxies;
 
@@ -66,6 +67,12 @@ namespace GeoWcf.Client.Wpf
 
         private void btnMakeCall_Click(object sender, RoutedEventArgs e)
         {
+            ChannelFactory<IMessageService> factory = new ChannelFactory<IMessageService>("");
+            IMessageService proxy = factory.CreateChannel();
+
+            proxy.ShowMessage(txtTextToShow.Text);
+            
+            factory.Close();
 
         }
     }

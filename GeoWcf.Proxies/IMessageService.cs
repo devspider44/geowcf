@@ -5,7 +5,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeoWcf.WindowsHost.Contracts
+namespace GeoWcf.Client.Contracts
 {
     [ServiceContract]
     public interface IMessageService
