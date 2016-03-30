@@ -11,7 +11,7 @@ using GeoWcf.Data;
 
 namespace GeoWcf.Services
 {
-    [ServiceBehavior(IncludeExceptionDetailInFaults = false)]
+    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
     public class GeoManager : IGeoService
     {
 
@@ -55,6 +55,11 @@ namespace GeoWcf.Services
                     State = zipCodeEntity.State.Abbreviation,
                     ZipCode = zipCodeEntity.Zip
                 };
+            }
+            else
+            {
+                ApplicationException ex = new ApplicationException(string.Format("Zip code {0} not found.",zip));
+                throw new FaultException<ApplicationException>(ex, "Just another message");
             }
 
             return zipCodeData;

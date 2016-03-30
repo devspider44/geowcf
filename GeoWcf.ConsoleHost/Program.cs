@@ -29,13 +29,13 @@ namespace GeoWcf.ConsoleHost
 
             hostGeoManager.Open();
 
-            ServiceHost hostStatefulGeoManager = new ServiceHost(typeof(StatefulGeoManager));
-            hostStatefulGeoManager.Open();
+            //ServiceHost hostStatefulGeoManager = new ServiceHost(typeof(StatefulGeoManager));
+            //hostStatefulGeoManager.Open();
 
             Console.WriteLine("Service is now running. Press [Enter] to exit.");
             Console.ReadLine();
             hostGeoManager.Close();
-            hostStatefulGeoManager.Close();
+           // hostStatefulGeoManager.Close();
         }
     }
 }

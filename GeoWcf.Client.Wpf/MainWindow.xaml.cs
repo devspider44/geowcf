@@ -35,7 +35,7 @@ namespace GeoWcf.Client.Wpf
             //binding.SendTimeout = new TimeSpan(0, 0, 0, 5);
             //((NetTcpBinding)binding).MaxReceivedMessageSize = 2000000;
             //binding.ReceiveTimeout = new TimeSpan(0,0,0,5);
-            
+
             //_Proxy = new GeoClient(binding,address);
             _Proxy = new StatefulGeoClient();
         }
@@ -46,17 +46,44 @@ namespace GeoWcf.Client.Wpf
         {
             if (txtZipCode.Text != "")
             {
-                GeoClient proxy = new GeoClient();
+                GeoClient proxy = new GeoClient("netTcp");
 
-                ZipCodeData data = proxy.GetZipInfo(txtZipCode.Text);
-
-                if (data != null)
+                try
                 {
-                    lblCity.Content = data.City;
-                    lblState.Content = data.State;
-                }
 
-               // proxy.Close();
+
+                    ZipCodeData data = proxy.GetZipInfo(txtZipCode.Text);
+
+                    if (data != null)
+                    {
+                        lblCity.Content = data.City;
+                        lblState.Content = data.State;
+                    }
+
+                    proxy.Close();
+                }
+                catch (FaultException<ExceptionDetail> ex)
+                {
+                    MessageBox.Show("Exception thrown by service.\n\r Exception type: " +
+                                    "FaultException<ExceptionDetail>\n\r" +
+                                    "Message: " + ex.Message + "\n\r" +
+                                    "Proxy state: " + proxy.State);
+                }
+                catch (FaultException<ApplicationException> ex)
+                {
+                    MessageBox.Show("Exception thrown by service.\n\r Exception type: " +
+                                    "FaultException<ApplicationException>\n\r" +
+                                    "Message: " + ex.Message + "\n\r" +
+                                    "Proxy state: " + proxy.State);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Exception thrown by service.\n\r Exception type: " +
+                                    ex.GetType().Name + "\n\r" +
+                                    "Message: " + ex.Message + "\n\r" +
+                                    "Proxy state: " + proxy.State);
+                }
+                // 
             }
         }
 
@@ -64,21 +91,21 @@ namespace GeoWcf.Client.Wpf
         {
             if (txtState.Text != null)
             {
-                //EndpointAddress address = new EndpointAddress("net.tcp://localhost:8009/GeoService");
-                //Binding binding = new NetTcpBinding();
-                //binding.SendTimeout = new TimeSpan(0,0,0,5);
-                //((NetTcpBinding) binding).MaxReceivedMessageSize = 2000000;
+                EndpointAddress address = new EndpointAddress("net.tcp://localhost:8009/GeoService");
+                Binding binding = new NetTcpBinding();
+                binding.SendTimeout = new TimeSpan(0, 0, 0, 5);
+                ((NetTcpBinding)binding).MaxReceivedMessageSize = 2000000;
 
-                //GeoClient proxy = new GeoClient(binding,address);
+                GeoClient proxy = new GeoClient(binding, address);
 
-                
 
-                IEnumerable<ZipCodeData> data = _Proxy.GetZips(int.Parse( txtState.Text));
+
+                IEnumerable<ZipCodeData> data = proxy.GetZips(txtState.Text);
                 if (data != null)
                 {
                     lbxResponse.ItemsSource = data;
                 }
-                //proxy.Close();
+                proxy.Close();
             }
         }
 
@@ -88,7 +115,7 @@ namespace GeoWcf.Client.Wpf
             IMessageService proxy = factory.CreateChannel();
 
             proxy.ShowMessage(txtTextToShow.Text);
-            
+
             factory.Close();
 
         }
@@ -105,14 +132,14 @@ namespace GeoWcf.Client.Wpf
         {
             if (txtZipCode.Text != "" && txtState.Text != "")
             {
-               // StatefulGeoClient proxy = new StatefulGeoClient();
+                // StatefulGeoClient proxy = new StatefulGeoClient();
 
                 IEnumerable<ZipCodeData> data = _Proxy.GetZips(int.Parse(txtState.Text));
                 if (data != null)
                     lbxResponse.ItemsSource = data;
 
-               // proxy.Close();
-                
+                // proxy.Close();
+
             }
 
         }
