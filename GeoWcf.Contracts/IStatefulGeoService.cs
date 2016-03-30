@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace GeoWcf.Contracts
 {
-    [ServiceContract]
+    [ServiceContract(SessionMode = SessionMode.Required)]
     public interface IStatefulGeoService
     {
         [OperationContract]
         void PushZip(string zip);
 
-        [OperationContract]
+        [OperationContract(IsInitiating = false)]
         ZipCodeData GetZipInfo();
 
-        [OperationContract]
+        [OperationContract(IsInitiating = false)]
         IEnumerable<ZipCodeData> GetZips(int range);
     }
 }

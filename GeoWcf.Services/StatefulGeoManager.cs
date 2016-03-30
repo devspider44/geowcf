@@ -9,9 +9,13 @@ using GeoWcf.Data;
 
 namespace GeoWcf.Services
 {
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class StatefulGeoManager : IStatefulGeoService
     {
+        public StatefulGeoManager()
+        {
+            Console.WriteLine("StatfulGeoManager instantiated");
+        }
         private ZipCode _ZipCodeEntity;
         public void PushZip(string zip)
         {
@@ -30,10 +34,6 @@ namespace GeoWcf.Services
                     State = _ZipCodeEntity.State.Abbreviation,
                     ZipCode = _ZipCodeEntity.Zip
                 };
-            }
-            else
-            {
-                throw new ApplicationException("uh oh");
             }
 
 
