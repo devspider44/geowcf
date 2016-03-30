@@ -12,6 +12,10 @@ namespace GeoWcf.Proxies
 {
     public class GeoClient : ClientBase<IGeoService>, IGeoService
     {
+        public GeoClient()
+        {
+            
+        }
         public GeoClient(string endpointName)
             : base(endpointName)
         {
@@ -22,9 +26,9 @@ namespace GeoWcf.Proxies
         {
             
         }
-        public ZipCodeData GetZipinfo(string zip)
+        public ZipCodeData GetZipInfo(string zip)
         {
-            return Channel.GetZipinfo(zip);
+            return Channel.GetZipInfo(zip);
         }
 
         public IEnumerable<string> GetStates(bool primaryOnly)

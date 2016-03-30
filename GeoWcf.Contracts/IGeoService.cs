@@ -13,7 +13,7 @@ namespace GeoWcf.Contracts
     public interface IGeoService
     {
         [OperationContract]
-        ZipCodeData GetZipinfo(string zip);
+        ZipCodeData GetZipInfo(string zip);
 
         [OperationContract]
         IEnumerable<string> GetStates(bool primaryOnly);

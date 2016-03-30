@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.ServiceModel;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ using GeoWcf.Data;
 
 namespace GeoWcf.Services
 {
+    [ServiceBehavior(IncludeExceptionDetailInFaults = false)]
     public class GeoManager : IGeoService
     {
 
@@ -36,7 +38,7 @@ namespace GeoWcf.Services
             _StateRepository = stateRepository;
         }
 
-        public ZipCodeData GetZipinfo(string zip)
+        public ZipCodeData GetZipInfo(string zip)
         {
 
             ZipCodeData zipCodeData = null;

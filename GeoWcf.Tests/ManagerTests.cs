@@ -30,7 +30,7 @@ namespace GeoWcf.Tests
 
            IGeoService geoService = new GeoManager(mockZipCodeRepository.Object);
 
-           ZipCodeData data = geoService.GetZipinfo("07035");
+           ZipCodeData data = geoService.GetZipInfo("07035");
 
            Assert.IsTrue(data.City.ToUpper() == "LINCOL PARK");
            Assert.IsTrue(data.State == "NJ");

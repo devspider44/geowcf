@@ -46,9 +46,9 @@ namespace GeoWcf.Client.Wpf
         {
             if (txtZipCode.Text != "")
             {
-               // StatefulGeoClient proxy = new StatefulGeoClient();
+                GeoClient proxy = new GeoClient();
 
-                ZipCodeData data = _Proxy.GetZipInfo();
+                ZipCodeData data = proxy.GetZipInfo(txtZipCode.Text);
 
                 if (data != null)
                 {
