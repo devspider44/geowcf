@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using GeoWcf.Contracts;
 using GeoWcf.Data;
@@ -37,6 +38,8 @@ namespace GeoWcf.Services
 
         public ZipCodeData GetZipinfo(string zip)
         {
+            Thread.Sleep(10000);
+
             ZipCodeData zipCodeData = null;
 
             IZipCodeRepository zipCodeRepository = _ZipCodeRepository ?? new ZipCodeRepository();

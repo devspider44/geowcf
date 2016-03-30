@@ -4,13 +4,13 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Label Name="lblZipCode" Content="Zip Code:" HorizontalAlignment="Left" Margin="34,34,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtZipCode" HorizontalAlignment="Left" Height="23" Margin="99,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtZipCode" HorizontalAlignment="Left" Height="23" Margin="99,38,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <Button Name="btnGetInfo" Content="Get Info" HorizontalAlignment="Left" Margin="99,81,0,0" VerticalAlignment="Top" Width="75" Click="btnGetInfo_Click"/>
         <Label Name="lblStateLabel" Content="State:" HorizontalAlignment="Left" Margin="296,34,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtState" HorizontalAlignment="Left" Height="23" Margin="361,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtState" HorizontalAlignment="Left" Height="23" Margin="361,38,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <Button Name="btnGetZipCodes" Content="Get Zip Codes" HorizontalAlignment="Left" Margin="361,81,0,0" VerticalAlignment="Top" Width="75" Click="btnGetZipCodes_Click"/>
         <Label Name="lblTextToShow" Content="Text to show:" HorizontalAlignment="Left" Margin="34,195,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtTextToShow" HorizontalAlignment="Left" Height="23" Margin="45,221,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="174"/>
+        <TextBox Name="txtTextToShow" HorizontalAlignment="Left" Height="23" Margin="45,221,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="174"/>
         <Button Name="btnMakeCall" Content="Make Call" HorizontalAlignment="Left" Margin="117,262,0,0" VerticalAlignment="Top" Width="75" Click="btnMakeCall_Click"/>
         <ListBox Name="lbxResponse" HorizontalAlignment="Left" Height="165" Margin="361,144,0,0" VerticalAlignment="Top" Width="120">
             <ListBox.ItemTemplate>

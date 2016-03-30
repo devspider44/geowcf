@@ -25,16 +25,27 @@ namespace GeoWcf.Client.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        private GeoClient _Proxy = null;
         public MainWindow()
         {
             InitializeComponent();
+            //EndpointAddress address = new EndpointAddress("net.tcp://localhost:8009/GeoService");
+            //Binding binding = new NetTcpBinding();
+            //binding.SendTimeout = new TimeSpan(0, 0, 0, 5);
+            //((NetTcpBinding)binding).MaxReceivedMessageSize = 2000000;
+            //binding.ReceiveTimeout = new TimeSpan(0,0,0,5);
+            
+            //_Proxy = new GeoClient(binding,address);
+            _Proxy = new GeoClient("netTcp");
         }
+
+
 
         private void btnGetInfo_Click(object sender, RoutedEventArgs e)
         {
             if (txtZipCode.Text != "")
             {
-                GeoClient proxy = new GeoClient("tcpEp");
+                GeoClient proxy = new GeoClient("netTcp");
 
                 ZipCodeData data = proxy.GetZipinfo(txtZipCode.Text);
 
@@ -52,16 +63,21 @@ namespace GeoWcf.Client.Wpf
         {
             if (txtState.Text != null)
             {
-                EndpointAddress address = new EndpointAddress("net.tcp://localhost:8009/GeoService");
-                Binding binding = new NetTcpBinding();
-                GeoClient proxy = new GeoClient(binding,address);
+                //EndpointAddress address = new EndpointAddress("net.tcp://localhost:8009/GeoService");
+                //Binding binding = new NetTcpBinding();
+                //binding.SendTimeout = new TimeSpan(0,0,0,5);
+                //((NetTcpBinding) binding).MaxReceivedMessageSize = 2000000;
 
-                IEnumerable<ZipCodeData> data = proxy.GetZips(txtState.Text);
+                //GeoClient proxy = new GeoClient(binding,address);
+
+                
+
+                IEnumerable<ZipCodeData> data = _Proxy.GetZips(txtState.Text);
                 if (data != null)
                 {
                     lbxResponse.ItemsSource = data;
                 }
-                proxy.Close();
+                //proxy.Close();
             }
         }
 
