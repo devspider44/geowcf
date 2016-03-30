@@ -38,7 +38,6 @@ namespace GeoWcf.Services
 
         public ZipCodeData GetZipinfo(string zip)
         {
-            Thread.Sleep(10000);
 
             ZipCodeData zipCodeData = null;
 

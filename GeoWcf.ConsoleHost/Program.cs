@@ -16,11 +16,11 @@ namespace GeoWcf.ConsoleHost
         {
             ServiceHost hostGeoManager = new ServiceHost(typeof(GeoManager));
 
-            string address = "net.tcp://localhost:8009/GeoService";
-            Binding binding = new NetTcpBinding();
-            Type contract = typeof (IGeoService);
+            //string address = "net.tcp://localhost:8009/GeoService";
+            //Binding binding = new NetTcpBinding();
+            //Type contract = typeof (IGeoService);
 
-            hostGeoManager.AddServiceEndpoint(contract, binding, address);
+            //hostGeoManager.AddServiceEndpoint(contract, binding, address);
 
             //string address2 = "http://localhost/GeoService";
             //Binding binding2 = new BasicHttpBinding();
@@ -29,9 +29,13 @@ namespace GeoWcf.ConsoleHost
 
             hostGeoManager.Open();
 
+            ServiceHost hostStatefulGeoManager = new ServiceHost(typeof(StatefulGeoManager));
+            hostStatefulGeoManager.Open();
+
             Console.WriteLine("Service is now running. Press [Enter] to exit.");
             Console.ReadLine();
             hostGeoManager.Close();
+            hostStatefulGeoManager.Close();
         }
     }
 }

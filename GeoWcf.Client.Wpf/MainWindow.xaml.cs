@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
@@ -25,7 +26,7 @@ namespace GeoWcf.Client.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        private GeoClient _Proxy = null;
+        private StatefulGeoClient _Proxy = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace GeoWcf.Client.Wpf
             //binding.ReceiveTimeout = new TimeSpan(0,0,0,5);
             
             //_Proxy = new GeoClient(binding,address);
-            _Proxy = new GeoClient("netTcp");
+            _Proxy = new StatefulGeoClient();
         }
 
 
@@ -45,9 +46,9 @@ namespace GeoWcf.Client.Wpf
         {
             if (txtZipCode.Text != "")
             {
-                GeoClient proxy = new GeoClient("netTcp");
+               // StatefulGeoClient proxy = new StatefulGeoClient();
 
-                ZipCodeData data = proxy.GetZipinfo(txtZipCode.Text);
+                ZipCodeData data = _Proxy.GetZipInfo();
 
                 if (data != null)
                 {
@@ -55,7 +56,7 @@ namespace GeoWcf.Client.Wpf
                     lblState.Content = data.State;
                 }
 
-                proxy.Close();
+               // proxy.Close();
             }
         }
 
@@ -72,7 +73,7 @@ namespace GeoWcf.Client.Wpf
 
                 
 
-                IEnumerable<ZipCodeData> data = _Proxy.GetZips(txtState.Text);
+                IEnumerable<ZipCodeData> data = _Proxy.GetZips(int.Parse( txtState.Text));
                 if (data != null)
                 {
                     lbxResponse.ItemsSource = data;
@@ -89,6 +90,30 @@ namespace GeoWcf.Client.Wpf
             proxy.ShowMessage(txtTextToShow.Text);
             
             factory.Close();
+
+        }
+
+        private void btnPush_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtZipCode.Text != "")
+            {
+                _Proxy.PushZip(txtZipCode.Text);
+            }
+        }
+
+        private void btnRange_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtZipCode.Text != "" && txtState.Text != "")
+            {
+               // StatefulGeoClient proxy = new StatefulGeoClient();
+
+                IEnumerable<ZipCodeData> data = _Proxy.GetZips(int.Parse(txtState.Text));
+                if (data != null)
+                    lbxResponse.ItemsSource = data;
+
+               // proxy.Close();
+                
+            }
 
         }
     }
