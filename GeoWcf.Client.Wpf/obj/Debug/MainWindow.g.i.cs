@@ -151,6 +151,22 @@ namespace GeoWcf.Client.Wpf {
         #line default
         #line hidden
         
+        
+        #line 32 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btnUpdateBatch;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 33 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btnPutBack;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -249,6 +265,24 @@ namespace GeoWcf.Client.Wpf {
             
             #line 31 "..\..\MainWindow.xaml"
             this.btnRange.Click += new System.Windows.RoutedEventHandler(this.btnRange_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 15:
+            this.btnUpdateBatch = ((System.Windows.Controls.Button)(target));
+            
+            #line 32 "..\..\MainWindow.xaml"
+            this.btnUpdateBatch.Click += new System.Windows.RoutedEventHandler(this.btnUpdateBatch_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 16:
+            this.btnPutBack = ((System.Windows.Controls.Button)(target));
+            
+            #line 33 "..\..\MainWindow.xaml"
+            this.btnPutBack.Click += new System.Windows.RoutedEventHandler(this.btnPutBack_Click);
             
             #line default
             #line hidden

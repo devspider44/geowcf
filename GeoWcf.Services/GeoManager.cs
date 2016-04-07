@@ -133,5 +133,56 @@ namespace GeoWcf.Services
 
             return zipCodeData;
         }
+
+    
+        [OperationBehavior(TransactionScopeRequired = true)]
+        public void UpdateZipCity(string zip, string city)
+        {
+            IZipCodeRepository zipCodeRepository = _ZipCodeRepository ?? new ZipCodeRepository();
+
+            ZipCode zipEntity = zipCodeRepository.GetByZip(zip);
+            
+            if (zipEntity != null)
+            {
+                zipEntity.City = city;
+                zipCodeRepository.Update(zipEntity);
+            }
+
+        }
+
+        [OperationBehavior(TransactionScopeRequired = true)]
+        public void UpdateZipCity(IEnumerable<ZipCityData> zipCityData)
+        {
+            IZipCodeRepository zipCodeRepository = _ZipCodeRepository ?? new ZipCodeRepository();
+
+            //Dictionary<string,string> cityBatch = new Dictionary<string, string>();
+
+            //foreach (ZipCityData zipCityItem in zipCityData) 
+            //{
+            //    cityBatch.Add(zipCityItem.ZipCode,zipCityItem.City);
+            //}
+
+            //zipCodeRepository.UpdateCityBatch(cityBatch);
+
+            int counter = 0;
+
+            foreach (var zipCityItem in zipCityData)
+            {
+                counter++;
+
+                ZipCode zipEntity = zipCodeRepository.GetByZip(zipCityItem.ZipCode);
+
+                if (zipEntity != null)
+                {
+                    zipEntity.City = zipCityItem.City;
+                    zipCodeRepository.Update(zipEntity);
+                    ZipCode updateItem = zipCodeRepository.Update(zipEntity);
+                }
+            }
+        }
+
     }
+
+   
+
 }

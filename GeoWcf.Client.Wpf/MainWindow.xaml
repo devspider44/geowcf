@@ -29,6 +29,8 @@
         <Label Name="lblState" Content="" HorizontalAlignment="Left" Margin="118,161,0,0" VerticalAlignment="Top"/>
         <Button Name="btnPush" Content="Push" HorizontalAlignment="Left" Margin="226,10,0,0" VerticalAlignment="Top" Width="75" Click="btnPush_Click"/>
         <Button Name="btnRange" Content="Range" HorizontalAlignment="Left" Margin="442,81,0,0" VerticalAlignment="Top" Width="75" Click="btnRange_Click"/>
+        <Button Name="btnUpdateBatch" Content="Update Batch" HorizontalAlignment="Left" Margin="250,221,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdateBatch_Click"/>
+        <Button Name="btnPutBack" Content="Put Back" HorizontalAlignment="Left" Margin="250,262,0,0" VerticalAlignment="Top" Width="75" Click="btnPutBack_Click"/>
 
     </Grid>
 </Window>

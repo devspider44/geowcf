@@ -143,5 +143,28 @@ namespace GeoWcf.Client.Wpf
             }
 
         }
+
+        private void btnUpdateBatch_Click(object sender, RoutedEventArgs e)
+        {
+            List<ZipCityData> cityZipList = new List<ZipCityData>()
+            {
+                new ZipCityData{ ZipCode = "07035",City="Bedrock"},
+                new ZipCityData{ZipCode ="33033", City = "End of the World"}
+            };
+
+            try
+            {
+                GeoClient proxy = new GeoClient();
+
+                proxy.UpdateZipCity(cityZipList);
+                proxy.Close();
+
+                MessageBox.Show("Updated.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error");
+            }
+        }
     }
 }

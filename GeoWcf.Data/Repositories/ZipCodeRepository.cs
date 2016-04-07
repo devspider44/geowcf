@@ -62,5 +62,17 @@ namespace GeoWcf.Data
                     .ToFullyLoaded();
             }
         }
+
+        public void UpdateCityBatch(Dictionary<string, string> cityBatch)
+        {
+            using (GeoWcfDbContext entityContext = new GeoWcfDbContext())
+            {
+                List<string> cityBatchList = (from kvp in cityBatch select kvp.Key).ToList();
+                List<ZipCode> zips = entityContext.ZipCodeSet.Where(e => cityBatchList.Contains(e.Zip)).ToList();
+                zips.ForEach(c => c.City = cityBatch[c.Zip]);
+
+                entityContext.SaveChanges();
+            }
+        }
     }
 }

@@ -24,5 +24,11 @@ namespace GeoWcf.Contracts
 
         [OperationContract(Name="GetZipsForRange")]
         IEnumerable<ZipCodeData> GetZips(string zip, int range);
+
+        [OperationContract]
+        [TransactionFlow(TransactionFlowOption.Allowed)]
+        void UpdateZipCity(string zip, string city);
+         [OperationContract]
+        void UpdateZipCity(IEnumerable<ZipCityData> zipCityData);
     }
 }
